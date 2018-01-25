@@ -4,9 +4,9 @@
 #include <stdio.h>
 #include "../print_arr.c"
 
-void insertionSort(int arr[], int n)
+void insertion_sort(int arr[], int n)
 {
-	for (int i = 0; i < n; i++) {
+	for (int i = 1; i < n; i++) {
 		int key = arr[i];
 		int j = i - 1;
 
@@ -23,8 +23,8 @@ int main()
 	int arr[] = {12, 11, 13, 5, 6};
 	int n = sizeof(arr)/sizeof(arr[0]);
 	
-	insertionSort(arr, n);
-	printArray(arr, n);
+	insertion_sort(arr, n);
+	print_arr(arr, n);
 	
 	return 0;
 }
